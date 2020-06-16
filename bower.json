@@ -1,0 +1,20 @@
+{
+  "name": "is-darkmode",
+  "homepage": "https://github.com/jojoee/is-darkmode",
+  "authors": [
+    "Nathachai Thongniran <inid3a@gmail.com>"
+  ],
+  "description": "Is macOS using Dark appearance",
+  "main": "./index.js",
+  "keywords": [
+    "macOS",
+    "Dark",
+    "appearance"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}

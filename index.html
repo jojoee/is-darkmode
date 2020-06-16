@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>is-darkmode</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <style>
+    html,
+    body {
+      font-family: monospace;
+    }
+
+    body.dark {
+      background-color: black;
+      color: white;
+    }
+
+    .description {
+      font-size: 1.8em;
+    }
+
+    .section {
+      padding: 8rem 0 7rem;
+      text-align: center;
+    }
+
+    /* Bigger than 550 */
+    @media (min-width: 550px) {
+      .section {
+        padding: 12rem 0 11rem;
+      }
+    }
+
+    /* Bigger than 750 */
+    @media (min-width: 750px) {
+      .section {
+        padding: 14rem 0 15rem;
+      }
+    }
+
+    /* Bigger than 1000 */
+    @media (min-width: 1000px) {
+      .section {
+        padding: 20rem 0 19rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section hero">
+    <div class="container">
+      <div class="row">
+        <h2>is-darkmode</h2>
+        <p class="description">
+          Is macOS using Dark appearance<br />
+          Is Dark: <span class="is-dark">-</span>
+        </p>
+        <hr>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+  <script>
+    function updateAppearance(isDarkMode = false) {
+      const isDark = isDarkMode === undefined ? false : isDarkMode
+
+      // update body class
+      const fnName = isDark ? 'add' : 'remove'
+      const className = 'dark'
+      document.body.classList[fnName](className)
+
+      // update appearance text
+      document.getElementsByClassName("is-dark")[0].textContent = isDark.toString()
+    }
+
+    // on init
+    const isDark = isDarkMode()
+    updateAppearance(isDark)
+
+    // on change
+    onDarkModeChange(updateAppearance)
+  </script>
+</body>
+
+</html>
