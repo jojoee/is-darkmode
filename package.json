@@ -37,7 +37,6 @@
   "homepage": "https://github.com/jojoee/is-darkmode#readme",
   "dependencies": {},
   "devDependencies": {
-    "@semantic-release/npm": "^7.0.5",
     "codecov": "3.6.5",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.1.0",
