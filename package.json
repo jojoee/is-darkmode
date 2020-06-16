@@ -1,5 +1,5 @@
 {
-  "name": "is-darkmode",
+  "name": "@jojoee/is-darkmode",
   "version": "0.0.0-development",
   "description": "Is macOS using Dark appearance",
   "main": "./index.js",
