@@ -38,7 +38,7 @@
   "homepage": "https://github.com/jojoee/is-darkmode#readme",
   "dependencies": {},
   "devDependencies": {
-    "codecov": "3.6.5",
+    "codecov": "3.7.1",
     "commitizen": "^4.0.3",
     "cz-conventional-changelog": "3.1.0",
     "ghooks": "2.0.4",
